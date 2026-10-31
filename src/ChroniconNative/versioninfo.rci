@@ -1,0 +1,29 @@
+// File version info shared by both DLLs (Explorer > Properties > Details); each .rc defines FILE_NAME and FILE_DESC.
+#include <winver.h>
+
+#define CP_VERSION 1,0,0,0
+#define CP_VERSION_TEXT "1.0.0"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION CP_VERSION
+PRODUCTVERSION CP_VERSION
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_DLL
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "ProductName", "ChroniconPlus"
+            VALUE "FileDescription", FILE_DESC
+            VALUE "OriginalFilename", FILE_NAME
+            VALUE "FileVersion", CP_VERSION_TEXT
+            VALUE "ProductVersion", CP_VERSION_TEXT
+            VALUE "Comments", "Fan-made Chronicon mod; not affiliated with the game's developers."
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END
